@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- PDF.js for PDF preview -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DevOps<span>Portfolio</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Ahmed ElSaeed</span></h1>
+                <h2>DevOps Engineer</h2>
+                <p>Specializing in Kubernetes, Multi-Cloud, and CI/CD automation to build reliable, scalable infrastructure</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+                <div class="social-links-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/saeedddd.jpg" alt="Your Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>DevOps Engineer with a passion for automation and continuous improvement</h3>
+                    <p>I'm a dedicated DevOps Engineer with 7+ years of experience in building and maintaining robust CI/CD pipelines, containerization, infrastructure as code, and cloud platforms. My goal is to streamline development processes and ensure seamless deployment of applications while maintaining high standards of security and reliability.</p>
+                    <p>Throughout my career, I've led migrations to microservices architectures, implemented GitOps workflows, and optimized cloud costs by up to 40%. I'm committed to keeping systems resilient and scalable while empowering development teams to deliver features faster and more reliably.</p>
+                    <div class="key-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-cloud"></i>
+                            <h4>Cloud Architecture</h4>
+                            <p>Multi-cloud strategies with AWS, Azure, GCP, and Alibaba Cloud</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>CI/CD Pipelines</h4>
+                            <p>GitOps with ArgoCD, Jenkins, and GitHub Actions</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-terminal"></i>
+                            <h4>Infrastructure as Code</h4>
+                            <p>Terraform, and Ansible</p>
+                        </div>
+                    </div>
+                    <a href="files/Ahmed_ElSaeed_Resume.pdf" class="btn download-btn" download><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="#" class="btn preview-btn" id="resumePreviewBtn"><i class="fas fa-eye"></i> Preview Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Azure</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Google Cloud</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Alibaba Cloud</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Containerization & Orchestration</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="skill-item">
+                            <span class="skill-name">OpenShift</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>CI/CD & Version Control</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Jenkins</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Terraform</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Ansible</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Monitoring & Logging</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Prometheus</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Grafana</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Zabbix</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Scripting & Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Bash/Shell</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Go</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Wordpress AKS Cluster</h3>
+                        <p>Deploy WordPress and MySQL on Azure AKS, using Persistent Volumes and Claims for data storage.</p>
+                        <div class="project-tech">
+                            <span>Kubernetes</span>
+                            <span>Azure AKS</span>
+                            <span>Kustomize</span>
+                            <span>ArgoCD</span>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                            <a href="https://github.com/Ahmedelsa3eed/Wordpress_AKS_Cluster" class="btn project-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/gke.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Kubernetes Cluster Setup</h3>
+                        <p>Designed and implemented a highly available Kubernetes cluster on GCP with automated scaling, logging, and monitoring solutions using Prometheus and Grafana.</p>
+                        <div class="project-tech">
+                            <span>Kubernetes</span>
+                            <span>GCP</span>
+                            <span>Kustomize</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <img src="images/gcp-ace.png" alt="AWS Certification">
+                    </div>
+                    <div class="certification-details">
+                        <h3>Associate Cloud Engineer Certification</h3>
+                        <p class="certification-date">Issued: February 2025</p>
+                        <p class="certification-id">Credential ID: 23e02dad4fbc464b831d8212685d42ef</p>
+                        <a href="https://www.credly.com/badges/85c7a820-150b-48a8-aa20-9c10536f0adc/linked_in_profile" class="certification-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer</h3>
+                        <h4>Obelion.ai</h4>
+                        <ul>
+                            <li>Architected and implemented a GKE Kubernetes Cluster serving multiple microservices across development, staging, and production environments.</li>
+                            <li>Led the implementation of GitOps workflows with ArgoCD, reducing deployment issues by 90% and enabling frequent daily deployments.</li>
+                            <li>Designed and implemented Infrastructure as Code practices using Terraform modules, reducing provisioning time from days to minutes.</li>
+                            <li>Established comprehensive monitoring and observability platform with Zabbix, and Grafana, improving MTTR by 65%.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out! I'm open to new opportunities and collaborations.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:ahmed.m.elsaeed2@gmail.com">ahmed.m.elsaeed2@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Alexandria, Egypt</p>
+                    </div>
+                    <div class="social-links-container"></div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">DevOps<span>Portfolio</span></div>
+                <p>&copy; 2025 Ahmed ElSaeed. All Rights Reserved.</p>
+                <div class="social-links-container"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Preview Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Resume Preview</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="pdfViewer"></div>
+            </div>
+            <div class="modal-footer">
+                <div class="pdf-controls">
+                    <button id="prevPage" class="btn pdf-nav-btn"><i class="fas fa-chevron-left"></i> Previous</button>
+                    <div id="pageInfo">
+                        Page <span id="currentPage">1</span> of <span id="totalPages">0</span>
+                    </div>
+                    <button id="nextPage" class="btn pdf-nav-btn">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <a href="files/Ahmed_ElSaeed_Resume.pdf" class="btn download-btn" download><i class="fas fa-download"></i> Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
