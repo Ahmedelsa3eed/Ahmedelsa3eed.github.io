@@ -6,6 +6,14 @@ A modern, responsive portfolio website showcasing my skills and experience as a 
 
 Visit the live portfolio at [https://Ahmedelsa3eed.github.io/](https://Ahmedelsa3eed.github.io/)
 
+## How It Works
+
+This portfolio website uses:
+- GitHub Pages for hosting (deployed from the gh-pages branch)
+- npm and gh-pages package for automated deployment
+- Local storage for saving user theme preferences
+- PDF.js for rendering the resume preview
+
 ## Features
 
 - Responsive design that works on all devices
@@ -46,15 +54,45 @@ To personalize this portfolio:
 ## Setup
 
 1. Clone the repository
-2. Open the project folder in your code editor
-3. Make the necessary modifications
-4. Deploy to your preferred hosting service
+   ```bash
+   git clone https://github.com/Ahmedelsa3eed/Ahmedelsa3eed.github.io.git
+   cd Ahmedelsa3eed.github.io
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Make any necessary modifications to personalize the content
+
+## Development
+
+To run the site locally for development and testing:
+
+```bash
+npm start
+```
+
+This will start a local development server at http://localhost:8080 (or another available port) using live-server, which automatically reloads when you make changes to the files.
 
 ## Deployment
 
-This portfolio can be easily deployed to any static site hosting service such as:
+This portfolio is deployed using GitHub Pages:
 
-- GitHub Pages
+1. Ensure you have the required dependencies installed:
+   ```bash
+   npm install
+   ```
+
+2. To deploy or update the site:
+   ```bash
+   npm run deploy
+   ```
+
+This will build and deploy the site to the gh-pages branch, which GitHub Pages serves at https://Ahmedelsa3eed.github.io/
+
+Alternatively, you can deploy this portfolio to other static hosting services such as:
 - Netlify
 - Vercel
 - AWS S3
@@ -63,3 +101,23 @@ This portfolio can be easily deployed to any static site hosting service such as
 ## License
 
 Feel free to use this template for your personal portfolio website.
+
+## Maintenance
+
+To keep your portfolio up-to-date:
+
+1. Make changes to your code in the main branch
+2. Commit and push your changes:
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   git push
+   ```
+3. Deploy the updated site:
+   ```bash
+   npm run deploy
+   ```
+
+This workflow ensures your changes are both saved in the main branch and deployed to the live site.
+
+For help with common deployment issues, refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
