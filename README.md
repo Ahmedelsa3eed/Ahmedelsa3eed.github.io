@@ -2,10 +2,16 @@
 
 A modern, responsive portfolio website showcasing my skills and experience as a DevOps Engineer.
 
+## Live Demo
+
+Visit the live portfolio at [https://Ahmedelsa3eed.github.io/](https://Ahmedelsa3eed.github.io/)
+
 ## Features
 
 - Responsive design that works on all devices
 - Clean and modern UI with smooth animations
+- Dark/Light mode toggle with persistent preference
+- PDF resume preview functionality
 - Sections for showcasing skills, projects, certifications, and work experience
 - Contact form for visitors to reach out
 - Social media integration
