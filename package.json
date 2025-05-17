@@ -1,0 +1,23 @@
+{
+  "name": "devops-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website showcasing my skills and experience as a DevOps Engineer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "echo 'Ready to deploy'",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "portfolio",
+    "devops",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.2"
+  }
+}
