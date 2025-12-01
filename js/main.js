@@ -434,3 +434,28 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Social links initialized');
     }
 });
+
+/* Recent Deployments helpers: horizontal wheel scroll + keyboard navigation */
+(function(){
+    const row = document.querySelector('.deployments-row');
+    if(!row) return;
+
+    // Allow mouse wheel to scroll horizontally on narrow viewports
+    row.addEventListener('wheel', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            row.scrollLeft += e.deltaY;
+        }
+    }, { passive: false });
+
+    // Keyboard navigation when focused
+    row.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            row.scrollBy({ left: 280, behavior: 'smooth' });
+            e.preventDefault();
+        } else if (e.key === 'ArrowLeft') {
+            row.scrollBy({ left: -280, behavior: 'smooth' });
+            e.preventDefault();
+        }
+    });
+})();

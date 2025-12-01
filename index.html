@@ -58,17 +58,131 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+        <!-- Recent Deployments Section -->
+        <section id="recent-deployments" class="recent-deployments">
+            <div class="container recent-container">
+                <h2 class="section-title">Recent Deployments</h2>
+                <p class="recent-subtitle" style="text-align:center;max-width:880px;margin:0 auto 24px;color:var(--text-color);opacity:0.85">A quick look at recent projects and demos I've deployed — click through to view live demos or code.</p>
+
+                <div class="deployments-row" aria-label="Recent Deployments">
+                    <!-- Card 1 -->
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">Workey — GKE</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">A microservices application running on GCP GKE with automated backups and CI/CD.</p>
+                        <div class="tech-badges">
+                            <span class="badge">Kubernetes</span>
+                            <span class="badge">GCP</span>
+                        </div>
+                        <a class="view-btn" href="https://workey.sa/" aria-label="View Workey — GKE">View Project</a>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">CloudGate</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">CloudGate simplifies cloud management by bringing top providers like AWS, Google Cloud, and Azure into one unified platform.</p>
+                        <div class="tech-badges">
+                            <span class="badge">GCP</span>
+                            <span class="badge">GKE</span>
+                            <span class="badge">Zabbix</span>
+                        </div>
+                        <a class="view-btn" href="https://cloudgate.opex.com.sa/" aria-label="View CloudGate">View Project</a>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">Dahab</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">An example GitOps workflow using ArgoCD, showing declarative app delivery and rollbacks.</p>
+                        <div class="tech-badges">
+                            <span class="badge">ECS</span>
+                            <span class="badge">Cloud Watch</span>
+                            <span class="badge">GitOps</span>
+                        </div>
+                        <a class="view-btn" href="https://dahab.mtech-bh.com/" aria-label="View Dahab">View Project</a>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">Malahi</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">Placeholder for your next deployment or showcase. Replace with your own project details.</p>
+                        <div class="tech-badges">
+                            <span class="badge">ECS</span>
+                            <span class="badge">Cloud Watch</span>
+                            <span class="badge">GitOps</span>
+                        </div>
+                        <a class="view-btn" href="https://malahi.mtech-bh.com/" aria-label="View Malahi">View Project</a>
+                    </article>
+
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">STEM AI</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">A lightweight web application built with HTML, CSS, JavaScript, and PHP. Deployed on Hostinger VPS with Nginx web server.</p>
+                        <div class="tech-badges">
+                            <span class="badge">HTML/CSS/JS</span>
+                            <span class="badge">PHP</span>
+                            <span class="badge">VPS</span>
+                            <span class="badge">Nginx</span>
+                        </div>
+                        <a class="view-btn" href="https://stem-ai.net/" aria-label="View STEM AI">View Project</a>
+                    </article>
+
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">RPAIR</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">A full-stack application with React frontend and Python backend. Containerized with Docker Compose and deployed on Hostinger VPS infrastructure.</p>
+                        <div class="tech-badges">
+                            <span class="badge">React</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Docker</span>
+                            <span class="badge">VPS</span>
+                        </div>
+                        <a class="view-btn" href="https://www.rpair.org/" aria-label="View RPAIR">View Project</a>
+                    </article>
+
+                    <article class="deploy-card" tabindex="0">
+                        <div class="card-header">
+                            <div class="project-name">NG Pharmacy</div>
+                            <div class="project-meta">Live</div>
+                        </div>
+                        <p class="project-desc">A modern pharmacy management system built with React frontend and Python backend. Deployed using Docker Compose on Hostinger VPS for scalability.</p>
+                        <div class="tech-badges">
+                            <span class="badge">React</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Docker</span>
+                            <span class="badge">VPS</span>
+                        </div>
+                        <a class="view-btn" href="https://ng-pharmacy.com/" aria-label="View NG Pharmacy">View Project</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/saeedddd.jpg" alt="Your Profile Picture">
+                    <img src="images/saeedddd.jpeg" alt="Your Profile Picture">
                 </div>
                 <div class="about-text">
                     <h3>DevOps Engineer with a passion for automation and continuous improvement</h3>
-                    <p>I'm a dedicated DevOps Engineer with over a year of experience in building and maintaining robust CI/CD pipelines, containerization, infrastructure as code, and cloud platforms. My goal is to streamline development processes and ensure seamless deployment of applications while maintaining high standards of security and reliability.</p>
+                    <p>I'm a dedicated DevOps Engineer with years of experience in building and maintaining robust CI/CD pipelines, containerization, infrastructure as code, and cloud platforms. My goal is to streamline development processes and ensure seamless deployment of applications while maintaining high standards of security and reliability.</p>
                     <p>Throughout my career, I've led migrations to microservices architectures, implemented GitOps workflows, and optimized cloud costs by up to 40%. I'm committed to keeping systems resilient and scalable while empowering development teams to deliver features faster and more reliably.</p>
                     <div class="key-highlights">
                         <div class="highlight-item">

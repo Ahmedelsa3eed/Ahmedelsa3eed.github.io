@@ -295,6 +295,187 @@ nav {
     margin-right: 15px;
 }
 
+/* Recent Deployments Section */
+.recent-deployments {
+    background-color: var(--grey-bg);
+    padding: 60px 0;
+}
+
+[data-theme="dark"] .recent-deployments {
+    background-color: var(--light-bg);
+}
+
+.recent-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-subtitle {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    color: var(--text-color);
+}
+
+.deployments-row {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 20px 10px 30px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    perspective: 1000px;
+}
+
+.deployments-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.deployments-row::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+
+.deployments-row::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.deploy-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(15, 17, 23, 0.04);
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 280px;
+    max-width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    transform-style: preserve-3d;
+    animation: cardRotate 8s ease-in-out infinite;
+}
+
+.deploy-card:nth-child(1) { animation-delay: 0s; }
+.deploy-card:nth-child(2) { animation-delay: 0.5s; }
+.deploy-card:nth-child(3) { animation-delay: 1s; }
+.deploy-card:nth-child(4) { animation-delay: 1.5s; }
+.deploy-card:nth-child(5) { animation-delay: 2s; }
+.deploy-card:nth-child(6) { animation-delay: 2.5s; }
+.deploy-card:nth-child(7) { animation-delay: 3s; }
+
+@keyframes cardRotate {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(-8deg);
+    }
+    75% {
+        transform: rotateY(8deg);
+    }
+}
+
+.deploy-card:focus {
+    outline: 3px solid rgba(74,108,247,0.12);
+    outline-offset: 2px;
+}
+
+.deploy-card:hover {
+    transform: translateY(-10px) scale(1.08) !important;
+    box-shadow: 0 15px 35px rgba(15, 17, 23, 0.15);
+    animation-play-state: paused;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-name {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.project-desc {
+    font-size: 0.92rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.tech-badges { 
+    display: flex; 
+    gap: 6px; 
+    flex-wrap: wrap;
+    min-height: 28px;
+}
+.badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    background: rgba(74,108,247,0.08);
+    color: var(--primary-color);
+    border-radius: 999px;
+    border: 1px solid rgba(74,108,247,0.06);
+}
+
+.view-btn {
+    margin-top: 8px;
+    align-self: flex-start;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.view-btn:hover { background: var(--primary-color); color: #fff; }
+
+/* Desktop: show multiple cards in view */
+@media screen and (min-width: 769px) {
+    .deployments-row {
+        justify-content: flex-start;
+    }
+}
+
+/* Small screens: horizontal scroll */
+@media screen and (max-width: 768px) {
+    .deployments-row {
+        padding: 20px 5px 25px;
+    }
+
+    .deploy-card {
+        min-width: 260px;
+        max-width: 260px;
+        height: 280px;
+    }
+}
+
 .social-links {
     display: flex;
     gap: 15px;
